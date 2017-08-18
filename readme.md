@@ -3,7 +3,12 @@ A port of Dave Ackerman's [lora-gateway](https://github.com/PiInTheSky/lora-gate
 
 While it's unlikely this code will be useful as-is for others, it is hoped it may be helpful as the basis of a portable tracker that can be used with PiInTheSky payloads.
 
+![alt text](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet/lora_rx_2b.png "Teensy-LC PITS Tracker")
+
 ## Hardware
+
+![alt text](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet/lora_rx_2.png "Hardware Components")
+
 Hardware is comprised of the following:
 1. PJRC Teensy-LC. Any of the Teensy 3 family should work with minimal change.
 2. RMF95 LoRa radio module (based on SX1276 chip).  I used an Adafruit Featherwing breakout board but any should work. 
@@ -13,6 +18,9 @@ Hardware is comprised of the following:
 Wiring is fairly simple and is described in the comments at the top of the teensy_gateway.ino file.  I kept some support for two radios in the code I ported from Dave's lora-gateway although it is not used currently.
 
 ## Software
+
+![alt text](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet/lora_rx_2a.png "Typical Display")
+
 The software is based around a heavily hacked, ported version of Dave's gateway.c file with the data displayed on the LCD (and packet and telemetry data echoed to the Teensy's USB Serial).  I added a new LoRa configuration (#8) to Dave's PiInTheSky code I am using for 915 MHz operation in the USA.  It achieves about 1200 bps using 62.5 kHz bandwidth, 4:6EC and SF8.
 
 The code detects both telemetry (including GPS) packets and SSDV packets.  It processes the telemetry packets but ignores (currently) the SSDV packets.  I would like eventually to echo them in some form to the Teensy USB Serial so that a program running on a PC could display them and telemetry information.
