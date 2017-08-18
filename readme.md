@@ -1,5 +1,5 @@
 # PiInTheSky compatible receiver
-A port of Dave Ackerman's [lora-gateway](https://github.com/PiInTheSky/lora-gateway) [Habitat](http://habhub.org/) interface to a PJRC Teensy-LC.  Designed to be included in a battery powered portable tracking antenna for balloon recovery, this receiver was designed to display telemetry from my makerspace's high-altitude balloon flight during the Aug 21, 2017 Eclipse on an old Sparkfun intelligent bitmap LCD.
+A port of Dave Akerman's [lora-gateway](https://github.com/PiInTheSky/lora-gateway) [Habitat](http://habhub.org/) interface to a PJRC Teensy-LC.  Designed to be included in a battery powered portable tracking antenna for balloon recovery, this receiver was designed to display telemetry from my makerspace's high-altitude balloon flight during the Aug 21, 2017 Eclipse on an old Sparkfun intelligent bitmap LCD.
 
 While it's unlikely this code will be useful as-is for others, it is hoped it may be helpful as the basis of a portable tracker that can be used with PiInTheSky payloads.
 
