@@ -3,11 +3,11 @@ A port of Dave Akerman's [lora-gateway](https://github.com/PiInTheSky/lora-gatew
 
 While it's unlikely this code will be useful as-is for others, it is hoped it may be helpful as the basis of a portable tracker that can be used with PiInTheSky payloads.
 
-![Alt text](https://github.com/danjulio/PiInTheSky-tracker/tree/master/pictures/lora_rx_2b.png "Teensy-LC PITS Tracker")
+![Teensy-LC PITS Tracker](https://raw.githubusercontent.com/danjulio/PiInTheSky-tracker/master/pictures/lora_rx_2b.png)
 
 ## Hardware
 
-![Alt text](https://github.com/danjulio/PiInTheSky-tracker/tree/master/pictures/lora_rx_2.png "Hardware Components")
+![Hardware Components](https://raw.githubusercontent.com/danjulio/PiInTheSky-tracker/master/pictures/lora_rx_2.png)
 
 Hardware is comprised of the following:
 1. PJRC Teensy-LC. Any of the Teensy 3 family should work with minimal change.
@@ -19,7 +19,7 @@ Wiring is fairly simple and is described in the comments at the top of the teens
 
 ## Software
 
-![Alt text](https://github.com/danjulio/PiInTheSky-tracker/tree/master/pictures/lora_rx_2a.png "Typical Display")
+![Typical Display](https://raw.githubusercontent.com/danjulio/PiInTheSky-tracker/master/pictures/lora_rx_2a.png)
 
 The software is based around a heavily hacked, ported version of Dave's gateway.c file with the data displayed on the LCD (and packet and telemetry data echoed to the Teensy's USB Serial).  I added a new LoRa configuration (#8) to Dave's PiInTheSky code I am using for 915 MHz operation in the USA.  It achieves about 1200 bps using 62.5 kHz bandwidth, 4:6EC and SF8.
 
